@@ -5,12 +5,14 @@ public class TestOsoba {
         tato.imie = "Jan";
         tato.nazwisko = "Kowalski";
         tato.wiek = 35;
+        tato.wzrost = 1.95;
 
         Osoba corka = new Osoba();
         corka.imie = "Alicja";
         corka.nazwisko = "Kowalska";
         corka.wiek = 10;
-        System.out.println("Czy Tato jest pełnoletni?: "+tato.pelnoletnia());
-        System.out.println("Czy córka jest pełnoletnia: "+corka.pelnoletnia());
+        corka.wzrost = 1.50;
+        System.out.println("Czy Tato jest pełnoletni?: "+tato.pelnoletnia()+" czy tato jest wysoki? "+tato.wysoka());
+        System.out.println("Czy córka jest pełnoletnia: "+corka.pelnoletnia()+" czy córka jest wysoka? "+corka.wysoka());
     }
 }
