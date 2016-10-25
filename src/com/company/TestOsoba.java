@@ -12,7 +12,7 @@ public class TestOsoba {
         corka.nazwisko = "Kowalska";
         corka.wiek = 10;
         corka.wzrost = 1.50;
-        System.out.println("Czy Tato jest pełnoletni?: "+tato.pelnoletnia()+" czy tato jest wysoki? "+tato.wysoka());
-        System.out.println("Czy córka jest pełnoletnia: "+corka.pelnoletnia()+" czy córka jest wysoka? "+corka.wysoka());
+        System.out.println("Czy Tato jest pełnoletni?: "+tato.pelnoletnia()+" | Czy tato jest wysoki? "+tato.wysoka());
+        System.out.println("Czy córka jest pełnoletnia: "+corka.pelnoletnia()+" | Czy córka jest wysoka? "+corka.wysoka());
     }
 }
