@@ -1,6 +1,9 @@
 package com.company;
+
+import java.util.ArrayList;
+
 public class TestOsoba {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Osoba tato = new Osoba();
         tato.imie = "Jan";
         tato.nazwisko = "Kowalski";
@@ -22,15 +25,29 @@ public class TestOsoba {
         corka.wzrost = 1.50;
         corka.waga = 35;
 
-        System.out.println("Czy Tato jest pełnoletni?: "+tato.pelnoletnia()+" | Czy tato jest wysoki? "+tato.wysoka());
-        System.out.println("Czy córka jest pełnoletnia: "+corka.pelnoletnia()+" | Czy córka jest wysoka? "+corka.wysoka());
+        System.out.println("Czy Tato jest pełnoletni?: " + tato.pelnoletnia() + " | Czy tato jest wysoki? " + tato.wysoka());
+        System.out.println("Czy córka jest pełnoletnia: " + corka.pelnoletnia() + " | Czy córka jest wysoka? " + corka.wysoka());
 
         Rodzina rodzina = new Rodzina();
         rodzina.tata = tato;
         rodzina.mama = mama;
         rodzina.dziecko = corka;
 
-    int łącznaWagaRodziny = rodzina.lacznaWaga();
-        System.out.println("Wszyscy członkowie rodziny razem ważą: "+łącznaWagaRodziny);
+        int łącznaWagaRodziny = rodzina.lacznaWaga();
+        System.out.println("Wszyscy członkowie rodziny razem ważą: " + łącznaWagaRodziny);
+
+        Osoba rafał = new Osoba();
+        rafał.waga = 30;
+        Osoba krzyś = new Osoba();
+        krzyś.waga = 40;
+        Osoba kasia = new Osoba();
+        kasia.waga = 30;
+
+        ArrayList<Osoba> dzieci = new ArrayList();
+        dzieci.add(rafał);
+        dzieci.add(krzyś);
+        dzieci.add(kasia);
+        dzieci.add(corka);
+        int size = dzieci.size();
     }
 }
