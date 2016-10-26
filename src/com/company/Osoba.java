@@ -12,24 +12,26 @@ private String imie, nazwisko;
         this.wiek = wiek;
         this.waga = waga;
         this.wzrost = wzrost;
-    if ( nazwisko != null){
-this.nazwisko = nazwisko;
-    }
-    else {
-        this.imie ="X";
-    }
+        //private Plec;
+        if (nazwisko != null) {
+            this.nazwisko = nazwisko;
+        } else {
+            this.imie = "X";
+        }
     }
 
-    boolean pelnoletnia(){
+    boolean pelnoletnia() {
         return wiek >= 18;
     }
+
     boolean wysoka() {
         return wzrost >= 1.90;
     }
-    int getWaga(){
+
+    int getWaga() {
         return waga;
     }
-   // public boolean czyJestWysoka[]{
-       // if ()
+   //public boolean czyJestWysoka[]{
+   //   if (czyJestMęszczyzną && )
     }
 

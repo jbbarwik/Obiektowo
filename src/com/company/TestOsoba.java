@@ -5,14 +5,14 @@ import java.util.ArrayList;
 public class TestOsoba {
     public static void main(String[] args) {
         Osoba tato = new Osoba("jan", "Kowalski", 35, 150, 1.95);
-       // tato.imie = "Jan";
+        // tato.imie = "Jan";
         //tato.nazwisko = "Kowalski";
         //tato.wiek = 35;
         //tato.wzrost = 1.95;
         //tato.waga = 150;
 
         Osoba mama = new Osoba("Barbara", "Kowalska", 35, 60, 1.70);
-       // mama.imie = "Barbara";
+        // mama.imie = "Barbara";
         //mama.nazwisko = "kowalska";
         //mama.wiek = 35;
         //mama.wzrost = 1.70;
@@ -26,9 +26,9 @@ public class TestOsoba {
         //corka.waga = 35;
 
         Osoba rafał = new Osoba("rafał", null, 0, 30, 0);
-       // rafał.waga = 30;
+        // rafał.waga = 30;
         Osoba krzyś = new Osoba("krzyś", null, 0, 40, 0);
-       // krzyś.waga = 40;
+        // krzyś.waga = 40;
         Osoba kasia = new Osoba("kasia", null, 0, 30, 0);
         //kasia.waga = 30;
 
@@ -39,7 +39,7 @@ public class TestOsoba {
         dzieci.add(corka);
 
         int size = dzieci.size();
-       Rodzina kowalscy = new Rodzina(mama, tato, dzieci);
+        Rodzina kowalscy = new Rodzina(mama, tato, dzieci);
         //kowalscy.tata = tato;
         //kowalscy.mama = mama;
         //kowalscy.dzieci = dzieci;
@@ -49,7 +49,6 @@ public class TestOsoba {
 
         int łącznaWagaRodziny = kowalscy.lacznaWaga();
         System.out.println("Wszyscy członkowie rodziny razem ważą: " + łącznaWagaRodziny);
-
 
 
     }

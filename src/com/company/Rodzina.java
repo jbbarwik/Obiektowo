@@ -3,7 +3,7 @@ package com.company;
 import java.util.ArrayList;
 
 public class Rodzina {
-   private Osoba mama;
+    private Osoba mama;
     private Osoba tata;
     private ArrayList<Osoba> dzieci;
 
@@ -14,13 +14,14 @@ public class Rodzina {
     }
 
     public int lacznaWaga() {
-    return tata.getWaga()+mama.getWaga()+lacznaWagaDzieci();
+        return tata.getWaga() + mama.getWaga() + lacznaWagaDzieci();
     }
-    public int lacznaWagaDzieci(){
+
+    public int lacznaWagaDzieci() {
         int waga = 0;
-        for (int i = 0; i<dzieci.size(); i++){
+        for (int i = 0; i < dzieci.size(); i++) {
             Osoba dziecko = dzieci.get(i);
-          int wagaDziecka = dziecko.getWaga();
+            int wagaDziecka = dziecko.getWaga();
             waga += wagaDziecka;
 
         }
